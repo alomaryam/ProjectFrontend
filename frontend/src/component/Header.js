@@ -1,7 +1,7 @@
 // import Carousel from "nuka-carousel";
 // import ex1 from "./Images/ex1.jpeg";
-// import Campus2 from "./Images/Campus2.png";
-// import Campus3 from "./Images/Campus3.jpeg";
+import Campus2 from "./Images/Campus2.png";
+import Campus3 from "./Images/Campus3.jpeg";
 
 import { useState, useEffect, useRef } from "react";
 import "../App.css";

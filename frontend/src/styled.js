@@ -23,3 +23,10 @@ padding-top:100px;
 }
 
 `;
+export const SlideWrapper=styled.div`
+left:100%;
+height:500px;
+width:100vw;
+display:flex;
+justify-content:center;
+`;
