@@ -1,17 +1,17 @@
 //Styles import
-import './App.css';
+import "./App.css";
 
-//Component import 
-import Navbar from "./component/Navbar"
-import Header from "./component/Header"
-import Footer from "./component/Footer"
+//Component import
+import Navbar from "./component/Navbar";
+import Slideshow from "./component/Header";
+import Footer from "./component/Footer";
 
 function App() {
   return (
     <div className="App">
-<Navbar/>
-<Header/>
-<Footer/>
+      <Navbar />
+      <Slideshow />
+      <Footer />
     </div>
   );
 }
