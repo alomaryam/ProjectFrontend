@@ -1,20 +1,16 @@
 // Data
-import universityStore from "../stores/UniversityStore"
-import CollegeItem from "../Items/CollegeItem"
+import universityStore from "../../stores/universityStore";
+import CollegeItem from "../Items/CollegeItem";
 
 //Mobx
 import { observer } from "mobx-react";
-const CollegeList = (props) => {
+const CollegeList = () => {
+  //college lists
+  const colleges = universityStore.college.map((colleges) => (
+    <CollegeItem colleges={colleges} key={colleges.id} />
+  ));
 
-    //college lists
-      const colleges =  universityStore.colleges.map((colleges) => (
-        <CollegeItem colleges={colleges} key={college.id}/>));
-    
-      return (
-          <div>
-           {colleges}
-           </div>
-)};
-    
-    export default observer(CollegeList);
-    
+  return <div>{colleges}</div>;
+};
+
+export default observer(CollegeList);
