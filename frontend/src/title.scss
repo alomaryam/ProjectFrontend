@@ -3,87 +3,80 @@
 //     font-family: Monospace;
 //     position: relative;
 //   }
-  
 
-  
-  * {
+* {
+  box-sizing: border-box;
+}
 
-    box-sizing: border-box;
+.main-content {
+  text-align: center;
+  text-transform: uppercase;
+  // scroll-snap-type: y mandatory;
+  position: relative;
+  // height: 100vh;
+  // overflow-y: scroll;
+}
+
+.hover,
+.word,
+h1 {
+  cursor: pointer;
+}
+
+h1 {
+  // margin-left:110px;
+  position: relative;
+  color: #fff;
+  font: 900 60px Serif;
+  text-shadow: 0 10px 25px rgba(0, 0, 0, 0.9);
+}
+
+.concept {
+  position: relative;
+  // padding: 5em;
+  padding-bottom: 5em;
+
+  // height: 100vh;
+  overflow: hidden;
+  scroll-snap-align: center;
+  &:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    // background: radial-gradient(rgba(0, 0, 0, 0.9), transparent);
+    // opacity: 0;
+    // transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
   }
-  
-  .main-content {
-    text-align: center;
-    text-transform: uppercase;
-    // scroll-snap-type: y mandatory;
+  // &:hover:before {
+  //   opacity: 0.5;
+  // }
+}
+
+.concept-two {
+  display: grid;
+  grid: 100% / repeat(11, 1fr);
+  // padding: 5em 15em;
+  background-color: rgba(0, 0, 0, 0);
+  background: url("./component/Images/Background1.jpeg") center center / cover;
+  .hover {
     position: relative;
-    // height: 100vh;
-    // overflow-y: scroll;
-  }
-  
-  .hover,
-  .word,
-  h1 {
- 
-    cursor: pointer;
-  }
-  
-  h1 {
-    // margin-left:110px;
-    position: relative;
-    color: #fff;
-    font: 900 60px Monospace;
-    text-shadow: 0 10px 25px rgba(0, 0, 0, 0.9);
-  }
-  
-  .concept {
-    position: relative;
-    // padding: 5em;
-    padding-bottom: 5em;
-    
-    // height: 100vh;
-    overflow: hidden;
-    scroll-snap-align: center;
-    &:before {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      // background: radial-gradient(rgba(0, 0, 0, 0.9), transparent);
-      // opacity: 0;
-      // transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
-    }
-    // &:hover:before {
-    //   opacity: 0.5;
-    // }
-  }
-  
-  
-  .concept-two {
     display: grid;
-    grid: 100% / repeat(8, 1fr);
-    // padding: 5em 15em;
-   background-color: rgba(0, 0, 0, 0);
-    background: url("./component/Images/Background1.jpeg")
-      center center / cover;
-    .hover {
-      position: relative;
-      display: grid;
-      place-items: center;
-    }
-    h1 {
-      color: #fff;
-      text-align: 0 1px 1px;
-      // -webkit-text-stroke: 2px rgb(255, 39, 39);
-      text-shadow: none;
-      transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    }
-    .hover:hover h1 {
-      transform: scale(1.5);
-      color: #fff;
-      -webkit-text-stroke: 2px transparent;
-      text-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    }
+    place-items: center;
   }
-  
+  h1 {
+    color: #fff;
+    text-align: 0 1px 1px;
+    // -webkit-text-stroke: 2px rgb(255, 39, 39);
+    text-shadow: none;
+    transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  .hover:hover h1 {
+    transform: scale(1.5);
+    color: #fff;
+    -webkit-text-stroke: 2px transparent;
+    text-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+}

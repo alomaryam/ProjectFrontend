@@ -15,13 +15,16 @@ const Header = () => {
               <h1></h1>
             </div>
             <div class="hover">
+              <h1></h1>
+            </div>
+            <div class="hover">
               <h1>M</h1>
             </div>
             <div class="hover">
               <h1>O</h1>
             </div>
             <div class="hover">
-              <h1>N</h1>
+              <h1>n</h1>
             </div>
             <div class="hover">
               <h1>S</h1>
@@ -35,9 +38,15 @@ const Header = () => {
             <div class="hover">
               <h1>R</h1>
             </div>
+            <div class="hover">
+              <h1></h1>
+            </div>
+            <div class="hover">
+              <h1></h1>
+            </div>
             {/* <div class="hover">
-          <h1></h1>
-        </div>  */}
+              <h1></h1>
+            </div> */}
 
             <div class="hover">
               <h1>U</h1>
@@ -56,6 +65,12 @@ const Header = () => {
             </div>
             <div class="hover">
               <h1>R</h1>
+            </div>
+            <div class="hover">
+              <h1>S</h1>
+            </div>
+            <div class="hover">
+              <h1>I</h1>
             </div>
             <div class="hover">
               <h1>T</h1>
