@@ -47,8 +47,10 @@ export const AboutWrapper = styled.div`
   height: 500px;
   align-content: space-between;
   display: grid;
-  background-color: #f0f0f0;
+  background-color: #a9d6e5;
   padding-bottom: 20px;
+  border-bottom:solid;
+  border-color:white;
 `;
 export const CardWrapper = styled.div`
   margin-top: 10px;
@@ -76,16 +78,22 @@ export const SlideImage = styled.img`
   height: 450px;
 `;
 export const TitleStyled = styled.div`
-  background-color: #011936;
+  background-color:#0b132b;
+  border-bottom:solid;
+  border-color:white;
   color: white;
   text-align: center;
   font-size: 25pt;
-  padding: 50px;
+ /* margin-top:100px; */
+ /* margin-bottom:500px; */
+  /* padding: 150px; */
 `;
 export const SlideWrapper = styled.div`
-  background-color: #011936;
+  background-color: #1c2541;
   padding: 50px;
   padding-bottom: 60px;
+  border-bottom:solid;
+  border-color:white;
 `;
 
 //blue: #047ab9

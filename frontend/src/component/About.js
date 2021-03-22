@@ -10,7 +10,7 @@ const About = () => {
     return (
 <AboutWrapper>
 <AboutTitleWrapper> 
-<h1>About our Faculty</h1>
+<h2>About our Faculty</h2>
 
 </AboutTitleWrapper>
  {/* Cards */}
@@ -23,7 +23,7 @@ const About = () => {
       <img src={Dean} alt="Avatar" />
     </div>
     <div className="flip-card-back">
-      <h1>John Doe</h1> 
+      <h2>John Doe</h2> 
       <p>Architect & Engineer</p> 
       <p>We love that guy</p>
     </div>
@@ -39,7 +39,7 @@ const About = () => {
       <img src={Knight2} alt="Avatar" />
     </div>
     <div className="flip-card-back">
-      <h1>John Doe</h1> 
+      <h2>John Doe</h2> 
       <p>Architect & Engineer</p> 
       <p>We love that guy</p>
     </div>
@@ -54,7 +54,7 @@ const About = () => {
       <img src={card3} alt="Avatar" />
     </div>
     <div className="flip-card-back">
-      <h1>John Doe</h1> 
+      <h2>John Doe</h2> 
       <p>Architect & Engineer</p> 
       <p>We love that guy</p>
     </div>
