@@ -1,6 +1,6 @@
 //Style
 import "../../App.css";
-import {CardWrapper} from "../../styled"
+import { CardWrapper } from "../../styled";
 //Data
 import { observer } from "mobx-react";
 
@@ -15,7 +15,8 @@ const CollegeItem = (props) => {
             <h2> {college.name}</h2>
           </div>
           <div className="flip-card-back">
-            <p>{college.buildingNUM}</p>
+            <p> Building Number: {college.buildingNUM}</p>
+            <button>courses</button>
           </div>
         </div>
       </div>
