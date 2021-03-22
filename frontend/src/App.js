@@ -5,7 +5,8 @@ import Navbar from "./component/Navbar";
 import Footer from "./component/Footer";
 import About from "./component/About";
 import Header from "./component/Header";
-import CollegeList from "./component/Lists/CollegeList"
+import CollegeList from "./component/Lists/CollegeList";
+import CourseList from "./component/Lists/CourseList";
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
       <Navbar />
       <Header />
       <About />
-      <CollegeList/>
+      <CollegeList />
+      <CourseList />
       <Footer />
     </div>
   );

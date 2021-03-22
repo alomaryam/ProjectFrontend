@@ -40,7 +40,7 @@ class UniversityStore {
   };
 
   //Deleting data from the Backend
-  //College 
+  //College
   deleteCollege = async (collegeId) => {
     try {
       await axios.delete(`http://localhost:8002/colleges/${collegeId}`);
@@ -49,11 +49,11 @@ class UniversityStore {
       console.error("UniversityStore -> deleteCollege -> error", error);
     }
   };
-  //Course 
-  deleteCourse = async (Course) => {
+  //Course
+  deleteCourse = async (courseId) => {
     try {
       await axios.delete(`http://localhost:8002/courses/${courseId}`);
-      this.course = this.course.filter((course) => college.id !== collegeId);
+      this.course = this.course.filter((course) => course.id !== courseId);
     } catch (error) {
       console.error("UniversityStore -> deleteCourse -> error", error);
     }
@@ -70,7 +70,6 @@ class UniversityStore {
       console.error("CollegeStore -> createCollege -> error", error);
     }
   };
-}
 
   //Course
   createCourse = async (data) => {
@@ -81,9 +80,9 @@ class UniversityStore {
       console.error("UniversityStore -> createCourse -> error", error);
     }
   };
-
-
+}
 const universityStore = new UniversityStore();
 universityStore.fetchCollege();
+universityStore.fetchCourse();
 
 export default universityStore;
