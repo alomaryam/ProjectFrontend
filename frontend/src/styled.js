@@ -79,7 +79,7 @@ export const TitleStyled = styled.div`
   background-color: #011936;
   color: white;
   text-align: center;
-  font-size: 40pt;
+  font-size: 25pt;
   padding: 50px;
 `;
 export const SlideWrapper = styled.div`
