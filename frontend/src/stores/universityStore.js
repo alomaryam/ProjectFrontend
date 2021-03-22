@@ -4,17 +4,25 @@ import axios from "axios";
 class UniversityStore {
   college = [];
   course = [];
+  student=[];
 
   constructor() {
     makeObservable(this, {
       college: observable,
       course: observable,
+      student: observable,
+      //Fetches
       fetchCollege: action,
       fetchCourse: action,
+      fetchStudent: action,
+      //Create
       createCollege: action,
       createCourse: action,
+      createStudent: action,
+      //Delete
       deleteCollege: action,
       deleteCourse: action,
+      deleteStudent: action,
     });
   }
 
@@ -38,6 +46,15 @@ class UniversityStore {
       console.error("UniversityStore -> fetchCourse -> error", error);
     }
   };
+  //Student Data
+  fetchStudent = async () => {
+    try {
+      const response = await axios.get("http://localhost:8002/students");
+      this.student = response.data;
+    } catch (error) {
+      console.error("UniversityStore -> fetchStudent -> error", error);
+    }
+  };
 
   //Deleting data from the Backend
   //College
@@ -56,6 +73,15 @@ class UniversityStore {
       this.course = this.course.filter((course) => course.id !== courseId);
     } catch (error) {
       console.error("UniversityStore -> deleteCourse -> error", error);
+    }
+  };
+  //Student
+  deleteCourse = async (studentId) => {
+    try {
+      await axios.delete(`http://localhost:8002/students/${studentId}`);
+      this.course = this.student.filter((student) => student.id !== studentId);
+    } catch (error) {
+      console.error("UniversityStore -> deleteStudent -> error", error);
     }
   };
 
@@ -80,9 +106,20 @@ class UniversityStore {
       console.error("UniversityStore -> createCourse -> error", error);
     }
   };
+
+  //Student
+  createCourse = async (data) => {
+    try {
+      const response = await axios.post("http://localhost:8002/students", data);
+      this.student.push(response.data);
+    } catch (error) {
+      console.error("UniversityStore -> createStudent -> error", error);
+    }
+  };
 }
 const universityStore = new UniversityStore();
 universityStore.fetchCollege();
 universityStore.fetchCourse();
+universityStore.fetchStudent();
 
 export default universityStore;
