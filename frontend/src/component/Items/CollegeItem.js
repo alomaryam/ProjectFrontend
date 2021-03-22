@@ -16,6 +16,7 @@ const CollegeItem = (props) => {
           </div>
           <div className="flip-card-back">
             <p> Building Number: {college.buildingNUM}</p>
+            <h2>{console.log(college.courses.name)}</h2>
             <button>courses</button>
           </div>
         </div>

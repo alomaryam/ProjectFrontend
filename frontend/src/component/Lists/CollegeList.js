@@ -13,6 +13,11 @@ const CollegeList = () => {
     <CollegeItem colleges={colleges} key={colleges.id} />
   ));
 
+  // //college courses list
+  // const courses = universityStore.college.courses.map((courses) => (
+  //   <CollegeItem courses={courses} key={courses.id} />
+  // ));
+
   return (
     <AboutWrapper>
       <CardsWrapper>{colleges}</CardsWrapper>
