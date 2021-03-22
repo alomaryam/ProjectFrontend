@@ -1,11 +1,14 @@
+//Style
 import "../../App.css";
+import {CardWrapper} from "../../styled"
+//Data
 import { observer } from "mobx-react";
 
 const CollegeItem = (props) => {
   const college = props.colleges;
 
   return (
-    <div>
+    <CardWrapper>
       <div className="flip-card">
         <div className="flip-card-inner">
           <div className="flip-card-front">
@@ -16,7 +19,7 @@ const CollegeItem = (props) => {
           </div>
         </div>
       </div>
-    </div>
+    </CardWrapper>
   );
 };
 

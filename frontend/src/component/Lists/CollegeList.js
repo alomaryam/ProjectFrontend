@@ -1,3 +1,6 @@
+//Styles 
+import {AboutWrapper, CardsWrapper} from "../../styled"
+
 // Data
 import universityStore from "../../stores/universityStore";
 import CollegeItem from "../Items/CollegeItem";
@@ -10,7 +13,11 @@ const CollegeList = () => {
     <CollegeItem colleges={colleges} key={colleges.id} />
   ));
 
-  return <div>{colleges}</div>;
-};
+  return(<CardsWrapper> 
+    <AboutWrapper>
+        {colleges}
+    </AboutWrapper>
+    </CardsWrapper>
+  )};
 
 export default observer(CollegeList);
