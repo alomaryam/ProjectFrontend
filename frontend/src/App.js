@@ -7,7 +7,7 @@ import About from "./component/About";
 import Header from "./component/Header";
 import CollegeList from "./component/Lists/CollegeList";
 import CourseList from "./component/Lists/CourseList";
-
+import StudentList from "./component/Lists/StudentList";
 function App() {
   return (
     <div>
@@ -16,6 +16,7 @@ function App() {
       <About />
       <CollegeList />
       <CourseList />
+      <StudentList />
       <Footer />
     </div>
   );

@@ -4,7 +4,7 @@ import axios from "axios";
 class UniversityStore {
   college = [];
   course = [];
-  student=[];
+  student = [];
 
   constructor() {
     makeObservable(this, {
@@ -76,10 +76,10 @@ class UniversityStore {
     }
   };
   //Student
-  deleteCourse = async (studentId) => {
+  deleteStudent = async (studentId) => {
     try {
       await axios.delete(`http://localhost:8002/students/${studentId}`);
-      this.course = this.student.filter((student) => student.id !== studentId);
+      this.student = this.student.filter((student) => student.id !== studentId);
     } catch (error) {
       console.error("UniversityStore -> deleteStudent -> error", error);
     }
@@ -108,7 +108,7 @@ class UniversityStore {
   };
 
   //Student
-  createCourse = async (data) => {
+  createStudent = async (data) => {
     try {
       const response = await axios.post("http://localhost:8002/students", data);
       this.student.push(response.data);
