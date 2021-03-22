@@ -1,18 +1,22 @@
 //Styles import
 import "./App.css";
-
+import {SlideWrapper} from "./styled"
 //Component import
 import Navbar from "./component/Navbar";
-import Slideshow from "./component/Header";
 import Footer from "./component/Footer";
-import {SlideWrapper} from "./styled"
+import About from "./component/About"
+import Header from "./component/Header";
+
 
 function App() {
   return (
     <div className="App">
       <Navbar />
       <SlideWrapper>
-      <Slideshow />
+     <Header/>
+      </SlideWrapper>
+      <SlideWrapper>
+      <About/>
       </SlideWrapper>
       <Footer />
     </div>

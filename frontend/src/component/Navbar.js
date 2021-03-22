@@ -1,6 +1,7 @@
 //Styles imports
 
-import { Navbar } from 'styled-navbar-component';
+// import { Navbar } from 'styled-navbar-component';
+import {Navbar} from '../styled'
 import { Button } from 'styled-button-component';
 import Logo from './Images/logo1.png'
 
