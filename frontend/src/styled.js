@@ -1,5 +1,45 @@
 import styled from "styled-components";
 
+export const Button = styled.a`
+  padding: 10px;
+  font-size: 20pt;
+  color: white;
+  background-color: black;
+  text-decoration: none;
+  float: right;
+`;
+
+export const A = styled.a`
+  color: white;
+  text-decoration: none;
+`;
+
+// export const ButtonA = styled.a`
+//   font-weight: 400;
+//   line-height: 1.5;
+//   text-align: center;
+//   white-space: nowrap;
+//   vertical-align: middle;
+//   -webkit-user-select: none;
+//   -moz-user-select: none;
+//   -ms-user-select: none;
+//   user-select: none;
+//   -webkit-transition: color 0.15s ease-in-out,
+//     background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+//     box-shadow 0.15s ease-in-out;
+//   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+//     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+//   border: 1px solid #6c757d;
+//   background-color: #6c757d;
+//   border-radius: 0.25rem;
+//   display: inline-block;
+//   font-size: 1rem;
+//   color: #fff;
+//   padding: 0.375rem 0.75rem;
+//   text-decoration: none;
+//   margin-bottom: 2px;
+// `;
+
 export const Navbar = styled.nav`
   position: relative;
   display: -webkit-box;

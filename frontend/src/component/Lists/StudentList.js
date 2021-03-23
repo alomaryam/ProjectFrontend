@@ -1,5 +1,5 @@
 //Styles
-import { AboutWrapper, CardsWrapper } from "../../styled";
+import { AboutWrapper, CardsWrapper, Button } from "../../styled";
 
 // Data
 import universityStore from "../../stores/universityStore";
@@ -17,6 +17,9 @@ const StudentList = () => {
 
   return (
     <div>
+      <Button type="button" href="/AddStudent">
+        +
+      </Button>
       <div>{student}</div>
     </div>
   );
