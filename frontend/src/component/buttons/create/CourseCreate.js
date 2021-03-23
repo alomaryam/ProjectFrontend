@@ -32,6 +32,7 @@ const AddCourse = (props) => {
         name="credit"
         onChange={handleChange}
       />
+      {/* // <input type="text" name="collegeId" /> */}
       <button onClick={handleSubmit}>Add Course</button>
     </div>
   );

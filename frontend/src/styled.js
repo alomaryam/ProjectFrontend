@@ -22,6 +22,15 @@ export const Navbar = styled.nav`
   border-color: rgba(0, 0, 0, 0.1);
   background-color: #f0f0f0 !important;
 `;
+
+export const List = styled.div`
+  border-style: solid;
+  border-color: grey;
+  width: 90%;
+  padding: 50px;
+  display: block;
+`;
+
 export const FooterDiv = styled.div`
   width: 99vw;
   padding: 20px;
@@ -46,12 +55,14 @@ export const AboutWrapper = styled.div`
   width: 100vw;
   height: 500px;
   align-content: space-between;
+  overflow: scroll;
   display: grid;
   background-color: #a9d6e5;
   padding-bottom: 20px;
-  border-bottom:solid;
-  border-color:white;
+  border-bottom: solid;
+  border-color: white;
 `;
+
 export const CardWrapper = styled.div`
   margin-top: 10px;
   -webkit-justify-content: space-between;
@@ -78,22 +89,22 @@ export const SlideImage = styled.img`
   height: 450px;
 `;
 export const TitleStyled = styled.div`
-  background-color:#0b132b;
-  border-bottom:solid;
-  border-color:white;
+  background-color: #0b132b;
+  border-bottom: solid;
+  border-color: white;
   color: white;
   text-align: center;
   font-size: 25pt;
- /* margin-top:100px; */
- /* margin-bottom:500px; */
+  /* margin-top:100px; */
+  /* margin-bottom:500px; */
   /* padding: 150px; */
 `;
 export const SlideWrapper = styled.div`
   background-color: #1c2541;
   padding: 50px;
   padding-bottom: 60px;
-  border-bottom:solid;
-  border-color:white;
+  border-bottom: solid;
+  border-color: white;
 `;
 
 //blue: #047ab9

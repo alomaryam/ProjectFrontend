@@ -10,7 +10,9 @@ import { observer } from "mobx-react";
 const CollegeList = () => {
   //college lists
   const colleges = universityStore.college.map((colleges) => (
-    <CollegeItem colleges={colleges} key={colleges.id} />
+    <ul>
+      <CollegeItem colleges={colleges} key={colleges.id} />
+    </ul>
   ));
 
   // //college courses list
@@ -19,9 +21,9 @@ const CollegeList = () => {
   // ));
 
   return (
-    <AboutWrapper>
-      <CardsWrapper>{colleges}</CardsWrapper>
-    </AboutWrapper>
+    <div>
+      <div>{colleges}</div>
+    </div>
   );
 };
 

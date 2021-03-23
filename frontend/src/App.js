@@ -1,5 +1,8 @@
 //Styles import
 // import "./App.css";
+
+import { Route, Switch } from "react-router";
+
 //Component import
 import Navbar from "./component/Navbar";
 import Footer from "./component/Footer";
@@ -20,14 +23,48 @@ function App() {
   return (
     <div>
       <Navbar />
-      <Header />
-      <About />
-      <AddCollege />
-      <CollegeList />
-      <AddCourse />
-      <CourseList />
-      <AddStudent />
-      <StudentList />
+      <Switch>
+        <Route exact path="/">
+          <Header />
+          <About />
+        </Route>
+
+        {/* add college  */}
+
+        <Route path="/AddCollege">
+          <AddCollege />
+        </Route>
+
+        {/* college list */}
+
+        <Route path="/CollegeList">
+          <CollegeList />
+        </Route>
+
+        {/* add course */}
+
+        <Route path="/AddCourse">
+          <AddCourse />
+        </Route>
+
+        {/* course list */}
+
+        <Route path="/CourseList">
+          <CourseList />
+        </Route>
+
+        {/* add student */}
+
+        <Route path="/AddStudent">
+          <AddStudent />
+        </Route>
+
+        {/* student list */}
+
+        <Route path="/StudentList">
+          <StudentList />
+        </Route>
+      </Switch>
       <Footer />
     </div>
   );

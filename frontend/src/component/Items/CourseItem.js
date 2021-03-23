@@ -1,6 +1,6 @@
 //Style
 import "../../App.css";
-import { CardWrapper } from "../../styled";
+import { List } from "../../styled";
 //Data
 import { observer } from "mobx-react";
 import CourseDelete from "../buttons/delete/CourseDelete.js";
@@ -8,22 +8,16 @@ import CourseDelete from "../buttons/delete/CourseDelete.js";
 const CourseItem = (props) => {
   const course = props.courses;
 
+  // console.log("hello", course.student[0]);
+
   return (
-    <CardWrapper>
-      <div className="flip-card">
-        <div className="flip-card-inner">
-          <div className="flip-card-front">
-            <h2> {course.name}</h2>
-          </div>
-          <div className="flip-card-back">
-            <h3> {course.number}</h3>
-            <h3> {course.credit}</h3>
-            <button>students</button>
-            <CourseDelete courseId={course.id} />
-          </div>
-        </div>
-      </div>
-    </CardWrapper>
+    <List>
+      <h2> {course.name}</h2>
+      <h3> {course.number}</h3>
+      <h3> {course.credit}</h3>
+      <button>students</button>
+      <CourseDelete courseId={course.id} />
+    </List>
   );
 };
 

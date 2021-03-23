@@ -10,13 +10,15 @@ import { observer } from "mobx-react";
 const CourseList = () => {
   //Course lists
   const course = universityStore.course.map((courses) => (
-    <CourseItem courses={courses} key={courses.id} />
+    <ul>
+      <CourseItem courses={courses} key={courses.id} />
+    </ul>
   ));
 
   return (
-    <AboutWrapper>
-      <CardsWrapper>{course}</CardsWrapper>
-    </AboutWrapper>
+    <div>
+      <div>{course}</div>
+    </div>
   );
 };
 

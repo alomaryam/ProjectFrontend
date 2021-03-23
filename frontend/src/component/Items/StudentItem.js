@@ -1,31 +1,31 @@
 //Style
 import "../../App.css";
-import { CardWrapper } from "../../styled";
+import { List } from "../../styled";
 //Data
 import { observer } from "mobx-react";
 import StudentDelete from "../buttons/delete/StudentDelete.js";
+import universityStore from "../../stores/universityStore";
+import CourseItem from "./CourseItem";
 
 const StudentItem = (props) => {
   const student = props.students;
 
+  // const filterCourse = universityStore.course
+  //   .filter((courses) =>
+  //     courses.student.some(courses.student.studentId === student.id)
+  //   )
+  //   .map((courses) => <CourseItem2 courses={courses} key={courses.id} />);
+
   return (
-    <CardWrapper>
-      <div className="flip-card">
-        <div className="flip-card-inner">
-          <div className="flip-card-front">
-            <h2> {student.name}</h2>
-          </div>
-          <div className="flip-card-back">
-            <h3> {student.gender}</h3>
-            <h3> {student.email}</h3>
-            <button>courses</button>
-            <div>
-              <StudentDelete studentId={student.id} />
-            </div>
-          </div>
-        </div>
-      </div>
-    </CardWrapper>
+    <List>
+      <h2> {student.name}</h2>
+      <h3> {student.gender}</h3>
+      <h3> {student.email}</h3>
+      <button>courses</button>
+
+      <StudentDelete studentId={student.id} />
+      {/* {filterCourse} */}
+    </List>
   );
 };
 

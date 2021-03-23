@@ -66,6 +66,7 @@ class UniversityStore {
       console.error("UniversityStore -> deleteCollege -> error", error);
     }
   };
+
   //Course
   deleteCourse = async (courseId) => {
     try {
