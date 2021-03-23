@@ -3,6 +3,7 @@ import "../../App.css";
 import { CardWrapper } from "../../styled";
 //Data
 import { observer } from "mobx-react";
+import CollegeDelete from "../buttons/delete/CollegeDelete.js";
 
 const CollegeItem = (props) => {
   const college = props.colleges;
@@ -16,8 +17,8 @@ const CollegeItem = (props) => {
           </div>
           <div className="flip-card-back">
             <p> Building Number: {college.buildingNUM}</p>
-            <h2>{console.log(college.courses.name)}</h2>
             <button>courses</button>
+            <CollegeDelete collegeId={college.id} />
           </div>
         </div>
       </div>

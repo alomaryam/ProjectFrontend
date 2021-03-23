@@ -90,7 +90,7 @@ class UniversityStore {
   createCollege = async (data) => {
     try {
       //is Data replaced with college?
-      const response = await axios.post("http://localhost:8002/college", data);
+      const response = await axios.post("http://localhost:8002/colleges", data);
       this.college.push(response.data);
     } catch (error) {
       console.error("CollegeStore -> createCollege -> error", error);
