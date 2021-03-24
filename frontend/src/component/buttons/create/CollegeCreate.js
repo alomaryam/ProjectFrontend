@@ -1,5 +1,6 @@
 import React from "react";
-// import {ThemeButton,CreateBarStyled,ListWrapper } from "../../styles";
+import { ADDWrapper, ButtonWrapper, Background } from "../../../styled";
+import { Button } from "styled-button-component";
 import universityStore from "../../../stores/universityStore";
 import { useState } from "react";
 
@@ -18,13 +19,24 @@ const AddCollege = (props) => {
   };
 
   return (
-    <div>
-      <p>Name</p>
-      <input type="text" name="name" onChange={handleChange} />
-      <p>Building Number</p>
-      <input type="text" name="buildingNUM" onChange={handleChange} />
-      <button onClick={handleSubmit}>Add College</button>
-    </div>
+    <Background>
+      <ADDWrapper>
+        <h2> Create New College </h2>
+        <input
+          placeholder="Name"
+          type="text"
+          name="name"
+          onChange={handleChange}
+        />
+        <input
+          placeholder="Building Number"
+          type="text"
+          name="buildingNUM"
+          onChange={handleChange}
+        />
+        <Button onClick={handleSubmit}>Add College</Button>
+      </ADDWrapper>
+    </Background>
   );
 };
 

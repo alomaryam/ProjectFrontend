@@ -15,73 +15,50 @@ const Header = () => {
               <h1></h1>
             </div>
             <div class="hover">
-              <h1></h1>
-            </div>
-            <div class="hover">
-              <h1>M</h1>
+              <h1>H</h1>
             </div>
             <div class="hover">
               <h1>O</h1>
             </div>
             <div class="hover">
-              <h1>n</h1>
+              <h1>G</h1>
             </div>
             <div class="hover">
-              <h1>S</h1>
+              <h1>W</h1>
             </div>
             <div class="hover">
-              <h1>T</h1>
-            </div>
-            <div class="hover">
-              <h1>E</h1>
+              <h1>A</h1>
             </div>
             <div class="hover">
               <h1>R</h1>
             </div>
             <div class="hover">
-              <h1></h1>
+              <h1>T</h1>
             </div>
             <div class="hover">
               <h1></h1>
-            </div>
-            {/* <div class="hover">
-              <h1></h1>
-            </div> */}
-
-            <div class="hover">
-              <h1>U</h1>
-            </div>
-            <div class="hover">
-              <h1>N</h1>
-            </div>
-            <div class="hover">
-              <h1>I</h1>
-            </div>
-            <div class="hover">
-              <h1>V</h1>
-            </div>
-            <div class="hover">
-              <h1>E</h1>
-            </div>
-            <div class="hover">
-              <h1>R</h1>
             </div>
             <div class="hover">
               <h1>S</h1>
             </div>
             <div class="hover">
-              <h1>I</h1>
+              <h1>C</h1>
             </div>
             <div class="hover">
-              <h1>T</h1>
+              <h1>H</h1>
             </div>
             <div class="hover">
-              <h1>Y</h1>
+              <h1>O</h1>
+            </div>
+            <div class="hover">
+              <h1>O</h1>
+            </div>
+            <div class="hover">
+              <h1>L</h1>
             </div>
           </div>
         </div>
       </TitleStyled>
-
       <SlideWrapper>
         <Slideshow />
       </SlideWrapper>

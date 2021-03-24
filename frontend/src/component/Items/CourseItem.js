@@ -1,6 +1,7 @@
 //Style
 import "../../App.css";
-import { List } from "../../styled";
+import { List, DeleteWrapper, MiniList } from "../../styled";
+import { Button } from "styled-button-component";
 //Data
 import { observer } from "mobx-react";
 import CourseDelete from "../buttons/delete/CourseDelete.js";
@@ -11,13 +12,15 @@ const CourseItem = (props) => {
   // console.log("hello", course.student[0]);
 
   return (
-    <List>
+    <MiniList>
       <h2> {course.name}</h2>
       <h3> {course.number}</h3>
       <h3> {course.credit}</h3>
-      <button>students</button>
-      <CourseDelete courseId={course.id} />
-    </List>
+      <Button>Students</Button>
+      <DeleteWrapper>
+        <CourseDelete courseId={course.id} />
+      </DeleteWrapper>
+    </MiniList>
   );
 };
 

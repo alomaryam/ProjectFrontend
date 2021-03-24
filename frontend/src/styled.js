@@ -1,5 +1,71 @@
 import styled from "styled-components";
+import Door from "./component/Images/Door2.gif";
+import BackgroundAbout from "./component/Images/backgroundabout.jpeg";
+import BackgroundAbout2 from "./component/Images/BackgroundAbout2.jpeg";
 
+export const Background = styled.div`
+  background-image: url(${Door});
+  height: 830px;
+  max-width: 100%;
+  padding-top: 130px;
+  background-size: cover;
+`;
+
+export const ADDWrapper = styled.div`
+  width: 500px;
+  height: 500px;
+  padding: 20px;
+  margin-right: 45%;
+  margin-left: 30%;
+  justify-items: center;
+  text-justify: center;
+  justify-content: center;
+  background-color: #0b132b;
+  align-content: center;
+  padding-top: 40px;
+  padding-bottom: 100px;
+  display: grid;
+  h2 {
+    font-size: 20pt;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 10px;
+    color: white;
+  }
+  input {
+    justify-content: center;
+    padding: 15pt;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+`;
+
+export const ButtonWrapper = styled.div`
+  /* 
+  margin-right: 45%;
+  /* margin-left: 30%; */
+  justify-items: center;
+  text-justify: center;
+  justify-content: center;
+  align-content: center;
+`;
+
+/* button {
+    padding: 10px;
+    font-size: 10pt;
+    color: white;
+    background-color: #6c757d;
+    text-decoration: none;
+    justify-items: center;
+    text-align: center; 
+    justify-content: center;
+    align-content: center;
+    margin: auto; */
+
+export const DeleteWrapper = styled.div`
+  display: flex;
+  float: right;
+`;
 export const Button = styled.a`
   padding: 10px;
   font-size: 20pt;
@@ -9,36 +75,21 @@ export const Button = styled.a`
   float: right;
 `;
 
+export const DeleteButton = styled.button`
+  font-size: 20pt;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: white;
+  border-color: red;
+  border-radius: 100%;
+  background-color: red;
+  float: right;
+`;
+
 export const A = styled.a`
   color: white;
   text-decoration: none;
 `;
-
-// export const ButtonA = styled.a`
-//   font-weight: 400;
-//   line-height: 1.5;
-//   text-align: center;
-//   white-space: nowrap;
-//   vertical-align: middle;
-//   -webkit-user-select: none;
-//   -moz-user-select: none;
-//   -ms-user-select: none;
-//   user-select: none;
-//   -webkit-transition: color 0.15s ease-in-out,
-//     background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
-//     box-shadow 0.15s ease-in-out;
-//   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-//     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-//   border: 1px solid #6c757d;
-//   background-color: #6c757d;
-//   border-radius: 0.25rem;
-//   display: inline-block;
-//   font-size: 1rem;
-//   color: #fff;
-//   padding: 0.375rem 0.75rem;
-//   text-decoration: none;
-//   margin-bottom: 2px;
-// `;
 
 export const Navbar = styled.nav`
   position: relative;
@@ -64,15 +115,29 @@ export const Navbar = styled.nav`
 `;
 
 export const List = styled.div`
+  /* background-color: #a9d6e5; */
+  border-color: #0b132b;
+  border-width: 10px;
   border-style: solid;
-  border-color: grey;
+  margin-top: 10pt;
+  margin-bottom: 10px;
+  width: 90%;
+  padding: 50px;
+  display: block;
+`;
+
+export const MiniList = styled.div`
+  background-color: #0b132b;
+  color: white;
+  margin-top: 10pt;
+  margin-bottom: 10px;
   width: 90%;
   padding: 50px;
   display: block;
 `;
 
 export const FooterDiv = styled.div`
-  width: 99vw;
+  width: 100%;
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
@@ -81,7 +146,6 @@ export const FooterDiv = styled.div`
 export const ContentDiv = styled.div`
   p {
     text-align: center;
-    padding-top: 100px;
   }
 `;
 // export const SlideWrapper=styled.div`
@@ -97,7 +161,9 @@ export const AboutWrapper = styled.div`
   align-content: space-between;
   overflow: scroll;
   display: grid;
-  background-color: #a9d6e5;
+  /* background-color: #0b132b; */
+  background-image: url(${BackgroundAbout2});
+  color: white;
   padding-bottom: 20px;
   border-bottom: solid;
   border-color: white;
@@ -140,7 +206,10 @@ export const TitleStyled = styled.div`
   /* padding: 150px; */
 `;
 export const SlideWrapper = styled.div`
-  background-color: #1c2541;
+  /* background-color: #0b132b; */
+  background-image: url(${BackgroundAbout});
+  /* background-color: #0b132b; */
+  /* background-color: #2c2f26; */
   padding: 50px;
   padding-bottom: 60px;
   border-bottom: solid;

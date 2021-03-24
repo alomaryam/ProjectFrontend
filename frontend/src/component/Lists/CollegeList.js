@@ -15,11 +15,6 @@ const CollegeList = () => {
     </ul>
   ));
 
-  // //college courses list
-  // const courses = universityStore.college.courses.map((courses) => (
-  //   <CollegeItem courses={courses} key={courses.id} />
-  // ));
-
   return (
     <div>
       <Button type="button" href="/AddCollege">

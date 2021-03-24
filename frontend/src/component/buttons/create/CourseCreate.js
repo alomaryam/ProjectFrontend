@@ -1,5 +1,6 @@
 import React from "react";
-// import {ThemeButton,CreateBarStyled,ListWrapper } from "../../styles";
+import { ADDWrapper, ButtonWrapper, Background } from "../../../styled";
+import { Button } from "styled-button-component";
 import universityStore from "../../../stores/universityStore";
 import { useState } from "react";
 
@@ -19,22 +20,37 @@ const AddCourse = (props) => {
   };
 
   return (
-    <div>
-      <p>Name</p>
-      <input type="text" name="name" onChange={handleChange} />
-      <p>Number</p>
-      <input type="text" name="number" onChange={handleChange} />
-      <p>Credit</p>
-      <input
-        type="number"
-        min="1"
-        max="3"
-        name="credit"
-        onChange={handleChange}
-      />
-      {/* // <input type="text" name="collegeId" /> */}
-      <button onClick={handleSubmit}>Add Course</button>
-    </div>
+    <Background>
+      <ADDWrapper>
+        <h2> Create New Course </h2>
+
+        <input
+          placeholder="Name"
+          type="text"
+          name="name"
+          onChange={handleChange}
+        />
+
+        <input
+          placeholder="Id"
+          type="text"
+          name="number"
+          onChange={handleChange}
+        />
+        <input
+          placeholder="Credit"
+          type="number"
+          min="1"
+          max="3"
+          name="credit"
+          onChange={handleChange}
+        />
+        {/* // <input type="text" name="collegeId" /> */}
+        <ButtonWrapper>
+          <Button onClick={handleSubmit}>Add Course</Button>
+        </ButtonWrapper>
+      </ADDWrapper>
+    </Background>
   );
 };
 

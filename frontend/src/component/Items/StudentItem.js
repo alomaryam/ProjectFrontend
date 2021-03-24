@@ -4,6 +4,7 @@ import { List } from "../../styled";
 //Data
 import { observer } from "mobx-react";
 import StudentDelete from "../buttons/delete/StudentDelete.js";
+import { Button } from "styled-button-component";
 import universityStore from "../../stores/universityStore";
 import CourseItem from "./CourseItem";
 
@@ -21,7 +22,7 @@ const StudentItem = (props) => {
       <h2> {student.name}</h2>
       <h3> {student.gender}</h3>
       <h3> {student.email}</h3>
-      <button>courses</button>
+      <Button>Courses</Button>
 
       <StudentDelete studentId={student.id} />
       {/* {filterCourse} */}

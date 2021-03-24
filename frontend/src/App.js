@@ -14,6 +14,8 @@ import CollegeList from "./component/Lists/CollegeList";
 import CourseList from "./component/Lists/CourseList";
 import StudentList from "./component/Lists/StudentList";
 
+// import CollegeCourse from "./component/Items/CollegeCourse";
+
 //button imports
 import AddCollege from "./component/buttons/create/CollegeCreate";
 import AddCourse from "./component/buttons/create/CourseCreate";
@@ -31,41 +33,43 @@ function App() {
 
         {/* add college  */}
 
-        <Route path="/AddCollege">
+        <Route exact path="/AddCollege">
           <AddCollege />
         </Route>
 
         {/* college list */}
 
-        <Route path="/CollegeList">
+        <Route exact path="/CollegeList">
           <CollegeList />
         </Route>
 
         {/* add course */}
 
-        <Route path="/AddCourse">
+        <Route exact path="/AddCourse">
           <AddCourse />
         </Route>
 
         {/* course list */}
 
-        <Route path="/CourseList">
+        <Route exact path="/CourseList">
           <CourseList />
         </Route>
 
         {/* add student */}
 
-        <Route path="/AddStudent">
+        <Route exact path="/AddStudent">
           <AddStudent />
         </Route>
 
         {/* student list */}
 
-        <Route path="/StudentList">
+        <Route exact path="/StudentList">
           <StudentList />
         </Route>
       </Switch>
-      <Footer />
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }

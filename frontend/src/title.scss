@@ -57,20 +57,23 @@ h1 {
 
 .concept-two {
   display: grid;
-  grid: 100% / repeat(11, 1fr);
+  grid: 100% / repeat(8, 1fr);
   // padding: 5em 15em;
   background-color: rgba(0, 0, 0, 0);
-  background: url("./component/Images/Background1.jpeg") center center / cover;
+  background: url("./component/Images/Door2.gif") center center / cover;
+
   .hover {
     position: relative;
     display: grid;
     place-items: center;
   }
   h1 {
-    color: #fff;
+    color: #0b132b;
+    font-style: bold;
     text-align: 0 1px 1px;
-    // -webkit-text-stroke: 2px rgb(255, 39, 39);
-    text-shadow: none;
+    -webkit-text-stroke: 2px white;
+    text-shadow: 5px 5px 2px rgb(31, 30, 30);
+
     transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
   .hover:hover h1 {

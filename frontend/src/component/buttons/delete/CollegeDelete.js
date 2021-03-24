@@ -1,6 +1,6 @@
 import React from "react";
-// import { DeleteButtonStyled } from "../../styles";
-import { Button } from "styled-button-component";
+import { DeleteButton } from "../../../styled";
+// import { Button } from "styled-button-component";
 import universityStore from "../../../stores/universityStore";
 
 const collegeDelete = (props) => {
@@ -11,10 +11,10 @@ const collegeDelete = (props) => {
   };
 
   return (
-    <Button onClick={handleDelete} collegeId={props.collegeId}>
+    <DeleteButton onClick={handleDelete} collegeId={props.collegeId}>
       {" "}
       x
-    </Button>
+    </DeleteButton>
   );
 };
 
