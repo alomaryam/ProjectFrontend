@@ -46,20 +46,20 @@ h1 {
     height: 100%;
     top: 0;
     left: 0;
-    // background: radial-gradient(rgba(0, 0, 0, 0.9), transparent);
-    // opacity: 0;
-    // transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+    background: radial-gradient(rgba(0, 0, 0, 0.9), transparent);
+    opacity: 0.6;
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
   }
-  // &:hover:before {
-  //   opacity: 0.5;
-  // }
+  &:hover:before {
+    opacity: 0.5;
+  }
 }
 
 .concept-two {
   display: grid;
   grid: 100% / repeat(8, 1fr);
   // padding: 5em 15em;
-  background-color: rgba(0, 0, 0, 0);
+  // background-color: rgba(0, 0, 0, 0);
   background: url("./component/Images/Door2.gif") center center / cover;
 
   .hover {

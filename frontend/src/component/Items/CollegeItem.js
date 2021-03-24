@@ -1,6 +1,6 @@
 //Style
 import "../../App.css";
-import { List, A } from "../../styled";
+import { List, A, FontDiv } from "../../styled";
 import { Button } from "styled-button-component";
 //Data
 import { observer } from "mobx-react";
@@ -16,18 +16,18 @@ const CollegeItem = (props) => {
     .map((courses) => <CourseItem courses={courses} key={courses.id} />);
 
   return (
-    <List>
-      <CollegeDelete collegeId={college.id} />
+    <div>
+      <List>
+        <FontDiv>
+          <CollegeDelete collegeId={college.id} />
+          <h2> {college.name}</h2>
 
-      <h2> {college.name}</h2>
+          <p> Building Number: {college.buildingNUM}</p>
+        </FontDiv>
 
-      <p> Building Number: {college.buildingNUM}</p>
-      <Button>
-        <A href="/AddCourse"> Courses </A>{" "}
-      </Button>
-
-      <div>{filterCourse}</div>
-    </List>
+        <div>{filterCourse}</div>
+      </List>
+    </div>
   );
 };
 

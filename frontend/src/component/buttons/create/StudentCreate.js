@@ -1,5 +1,5 @@
 import React from "react";
-import { ADDWrapper, ButtonWrapper, Background } from "../../../styled";
+import { ADDWrapper, ButtonWrapper, Background, A } from "../../../styled";
 import universityStore from "../../../stores/universityStore";
 import { Button } from "styled-button-component";
 import { useState } from "react";
@@ -45,6 +45,8 @@ const AddStudent = (props) => {
         />
         <ButtonWrapper>
           <Button onClick={handleSubmit}>Add Student</Button>
+
+          <A href="/StudentList"> Show Students </A>
         </ButtonWrapper>
       </ADDWrapper>
     </Background>

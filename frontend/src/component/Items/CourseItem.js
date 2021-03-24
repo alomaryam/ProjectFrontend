@@ -13,13 +13,11 @@ const CourseItem = (props) => {
 
   return (
     <MiniList>
-      <h2> {course.name}</h2>
-      <h3> {course.number}</h3>
-      <h3> {course.credit}</h3>
-      <Button>Students</Button>
-      <DeleteWrapper>
-        <CourseDelete courseId={course.id} />
-      </DeleteWrapper>
+      <CourseDelete courseId={course.id} />
+
+      <h2>Course Name: {course.name}</h2>
+      <h3>Course Id: {course.number}</h3>
+      <h3>Credits: {course.credit}</h3>
     </MiniList>
   );
 };

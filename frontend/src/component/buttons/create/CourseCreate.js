@@ -1,5 +1,5 @@
 import React from "react";
-import { ADDWrapper, ButtonWrapper, Background } from "../../../styled";
+import { ADDWrapper, ButtonWrapper, Background, A } from "../../../styled";
 import { Button } from "styled-button-component";
 import universityStore from "../../../stores/universityStore";
 import { useState } from "react";
@@ -48,6 +48,8 @@ const AddCourse = (props) => {
         {/* // <input type="text" name="collegeId" /> */}
         <ButtonWrapper>
           <Button onClick={handleSubmit}>Add Course</Button>
+
+          <A href="/CourseList"> Show Courses </A>
         </ButtonWrapper>
       </ADDWrapper>
     </Background>

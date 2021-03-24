@@ -1,5 +1,10 @@
 //Styles
-import { AboutWrapper, CardsWrapper, Button } from "../../styled";
+import {
+  AboutWrapper,
+  CardsWrapper,
+  Button,
+  ListBackground,
+} from "../../styled";
 
 // Data
 import universityStore from "../../stores/universityStore";
@@ -16,12 +21,12 @@ const CollegeList = () => {
   ));
 
   return (
-    <div>
+    <ListBackground>
       <Button type="button" href="/AddCollege">
         +
       </Button>
       <div>{colleges}</div>
-    </div>
+    </ListBackground>
   );
 };
 
